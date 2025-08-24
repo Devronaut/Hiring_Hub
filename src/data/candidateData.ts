@@ -1,6 +1,6 @@
 import type { Candidate } from '../types/candidate';
 
-const FORM_SUBMISSIONS_URL = import.meta.env.VITE_DATA_URL;
+const FORM_SUBMISSIONS_URL = import.meta.env.VITE_DATA_URL || '/form-submissions.json';
 
 export const fetchCandidates = async (): Promise<Candidate[]> => {
   try {
