@@ -1,69 +1,95 @@
-# React + TypeScript + Vite
+# Hiring App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + TypeScript web application for evaluating, comparing, and building high-performing engineering teams. Built with Vite, Tailwind CSS, and Lucide icons.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+•⁠  ⁠Candidate cards with skill, experience, and salary breakdowns
+•⁠  ⁠Advanced scoring and skill match analytics
+•⁠  ⁠Team builder with selection limits and diversity prompts
+•⁠  ⁠Candidate profile modal and comparison tools
+•⁠  ⁠Filtering, bookmarking, and exporting team reports
+•⁠  ⁠Responsive UI with smooth transitions and accessibility enhancements
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+•⁠  ⁠[React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+•⁠  ⁠[Vite](https://vitejs.dev/) for fast development and builds
+•⁠  ⁠[Tailwind CSS](https://tailwindcss.com/) for styling
+•⁠  ⁠[Lucide React](https://lucide.dev/) for icons
+•⁠  ⁠[Recharts](https://recharts.org/) for analytics dashboards
+•⁠  ⁠ESLint, PostCSS, and modern tooling
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+•⁠  ⁠Node.js (v18+ recommended)
+•⁠  ⁠npm or yarn
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+⁠ sh
+git clone https://github.com/yourusername/hiring-app.git
+cd hiring-app
+npm install
+ ⁠
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Development
+
+Start the development server:
+
+⁠ sh
+npm run dev
+ ⁠
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build
+
+To build for production:
+
+⁠ sh
+npm run build
+ ⁠
+
+### Lint
+
+To run ESLint:
+
+⁠ sh
+npm run lint
+ ⁠
+
+### Preview
+
+To preview the production build:
+
+⁠ sh
+npm run preview
+ ⁠
+
+## Project Structure
+
+
+hiring-app/
+  src/
+    components/      # React components (CandidateCard, TeamBuilder, etc.)
+    data/            # Sample and mock data
+    types/           # TypeScript types
+    utils/           # Utility functions (scoring, filtering, etc.)
+    index.css        # Global styles and Tailwind config
+    App.tsx          # Main app component
+    main.tsx         # Entry point
+  public/            # Static assets
+  index.html         # HTML template
+  package.json       # Scripts and dependencies
+  tailwind.config.js # Tailwind configuration
+  vite.config.ts     # Vite configuration
+
+
+## Customization
+
+•⁠  ⁠Update candidate data in [⁠ src/data ⁠](src/data)
+•⁠  ⁠Adjust scoring logic in [⁠ src/utils/scoring.ts ⁠](src/utils/scoring.ts)
+•⁠  ⁠Modify UI styles in [⁠ src/index.css ⁠](src/index.css) and [⁠ tailwind.config.js ⁠](tailwind.config.js)
