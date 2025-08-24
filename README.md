@@ -29,7 +29,6 @@ A modern React + TypeScript web application for evaluating, comparing, and build
 
 ### Installation
 
-⁠ sh
 git clone https://github.com/yourusername/hiring-app.git
 cd hiring-app
 npm install
@@ -38,39 +37,29 @@ npm install
 ### Development
 
 Start the development server:
-
-⁠ sh
 npm run dev
- ⁠
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ### Build
 
 To build for production:
-
-⁠ sh
 npm run build
  ⁠
 
 ### Lint
 
 To run ESLint:
-
-⁠ sh
 npm run lint
  ⁠
 
 ### Preview
 
 To preview the production build:
-
-⁠ sh
 npm run preview
  ⁠
 
 ## Project Structure
-
 
 hiring-app/
   src/
