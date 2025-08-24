@@ -314,7 +314,6 @@ const AnalyticsDashboard = ({ allCandidates, selectedCandidates }: AnalyticsDash
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
-              {/* <Tooltip /> */}
             </PieChart>
           </ResponsiveContainer>
         </div>

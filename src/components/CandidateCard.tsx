@@ -63,15 +63,6 @@ export const CandidateCard: React.FC<CandidateCardProps> = ({
   const canSelect = isSelected || selectedCount < maxSelection;
   const isAtMaxSelection = selectedCount >= maxSelection && !isSelected;
 
-  // console.log('Candidate card state:', { 
-  //   candidateName: candidate.name, 
-  //   isSelected, 
-  //   selectedCount, 
-  //   maxSelection, 
-  //   canSelect, 
-  //   isAtMaxSelection 
-  // });
-
   const handleSelectClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     
@@ -86,15 +77,12 @@ export const CandidateCard: React.FC<CandidateCardProps> = ({
   };
 
   const handleButtonHover = () => {
-    console.log('Button hover:', { isAtMaxSelection, selectedCount, maxSelection });
     if (isAtMaxSelection) {
-      console.log('Showing popup');
       setShowMaxSelectionPopup(true);
     }
   };
 
   const handleButtonLeave = () => {
-    console.log('Button leave, hiding popup');
     setShowMaxSelectionPopup(false);
   };
 

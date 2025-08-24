@@ -36,6 +36,7 @@ function App() {
   const [showBookmarksOnly, setShowBookmarksOnly] = useState(false);
 
   const ITEMS_PER_PAGE = 6;
+  const MAX_SELECTED_CANDIDATES = 5;
 
   useEffect(() => {
     const loadCandidates = async () => {
@@ -116,15 +117,9 @@ function App() {
   };
 
   const handleQuickSelect = (candidates: Candidate[]) => {
-    // Ensure we don't exceed 5 candidates
-    const newSelection = candidates.slice(0, 5);
+    // Max 5 candidates
+    const newSelection = candidates.slice(0, MAX_SELECTED_CANDIDATES);
     setSelectedCandidates(newSelection);
-    
-    // Show success message
-    if (newSelection.length > 0) {
-      // You could add a toast notification here
-      console.log(`Quick selected ${newSelection.length} candidates`);
-    }
   };
 
   const filteredCandidates = candidates.filter(candidate => {
