@@ -2,6 +2,12 @@
 
 A modern React + TypeScript web application for evaluating, comparing, and building high-performing engineering teams. Built with Vite, Tailwind CSS, and Lucide icons.
 
+## Deployment
+
+This project is deployed on Netlify.
+
+Live Demo: https://hiringhub1.netlify.app/
+
 ## Features
 
 •⁠  ⁠Candidate cards with skill, experience, and salary breakdowns
@@ -39,7 +45,7 @@ npm install
 Start the development server:
 npm run dev
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open [http://localhost:5173](http://localhost:5173) in the browser.
 
 ### Build
 
@@ -75,10 +81,3 @@ hiring-app/
   package.json       # Scripts and dependencies
   tailwind.config.js # Tailwind configuration
   vite.config.ts     # Vite configuration
-
-
-## Customization
-
-•⁠  ⁠Update candidate data in [⁠ src/data ⁠](src/data)
-•⁠  ⁠Adjust scoring logic in [⁠ src/utils/scoring.ts ⁠](src/utils/scoring.ts)
-•⁠  ⁠Modify UI styles in [⁠ src/index.css ⁠](src/index.css) and [⁠ tailwind.config.js ⁠](tailwind.config.js)
